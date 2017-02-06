@@ -1,0 +1,75 @@
+application: egb-platform
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+inbound_services:
+- warmup
+
+builtins:
+- appstats: on
+
+libraries:
+- name: endpoints
+  version: latest
+  
+- name: jinja2
+  version: latest
+   
+handlers:
+#endpoints handler
+
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+
+- url: /stylesheet
+  static_dir: jinja/stylesheet
+
+- url: /script
+  static_dir: jinja/script
+  
+  
+- url: /_ah/spi/.*
+  script: main.application
+
+- url: /
+  script: egb.admin.data_import.app  
+ 
+- url: /login
+  script: egb.admin.data_import.app
+  
+- url: /new
+  script: egb.admin.data_import.app
+  
+- url: /main
+  script: egb.admin.data_import.app
+  
+- url: /upload/.* 
+  script: egb.admin.data_import.app
+  
+- url: /upload 
+  script: egb.admin.data_import.app
+  
+- url: /logout 
+  script: egb.admin.data_import.app
+  
+- url: /validate 
+  script: egb.admin.stage1.validation_import.app
+  
+- url: /upload_validate 
+  script: egb.admin.stage1.validation_import.app
+  
+- url: /prep 
+  script: egb.admin.stage2.prep_import.app
+  
+- url: /upload_prep
+  script: egb.admin.stage2.prep_import.app
+  
+  
+- url: /demo-prep 
+  script: egb.admin.stage2.demo_import.app
+  
+- url: /upload_prep_demo
+  script: egb.admin.stage2.demo_import.app

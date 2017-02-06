@@ -1,0 +1,10 @@
+/__init__.pyc
+/apache.pyc
+/apps.pyc
+/context.pyc
+/exc.pyc
+/hash.pyc
+/hosts.pyc
+/ifc.pyc
+/registry.pyc
+/win32.pyc

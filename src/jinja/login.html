@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="stylesheet/theme.css">
+		<script type="text/javascript" src="script/jquery.js"></script>
+		<script type="text/javascript" src="script/script.js"></script>
+	</head>
+	<body>
+		<div id="login_container" class='login_container'>
+			<h1>Platform Data Import</h1>
+		    <form action="" method="POST" enctype="multipart/form-data">
+		        <input type="text" id="username" name="username" placeholder="Username..." value="{% if username %} {{username}} {% endif %}"/>
+		        <input type="password" id="password" name="password" placeholder="Password..."/>
+		        <input type="submit" name="submit" value="Login">
+		    </form>
+		   	{% if message %}
+		   	<div class="error_message">
+		    	{{message}}
+		    </div>
+    		{% endif %}
+		</div>
+	</body>
+</html>

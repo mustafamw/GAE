@@ -1,0 +1,193 @@
+body
+{
+	background: url('http://cdn.pcwallart.com/images/cool-gradient-background-wallpaper-2.jpg') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	position: relative;
+}
+
+.login_container
+{
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+}
+.login_container  h1
+{
+	color: #29495E;
+}
+.message
+{
+	background: #FF9300;
+    color: white;
+    width: 50%;
+    font-weight: bold;
+    margin: auto;
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+    border: 1px dashed red;
+}
+.login_container .error_message
+{
+	background: #F15959;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+}
+input
+{
+	cursor: pointer;
+}
+.login_container input[type=text],
+.login_container input[type=password],
+.login_container input[type=submit],
+.form_import form input[type=submit]
+{
+	display:block;
+	width: 100%;
+	padding: 15px;
+	margin-bottom: 10px;
+	font-size: 16px;
+}
+.login_container input[type=submit]
+{
+	border: none;
+    background: #2A4A5F;
+    color: white;
+    font-weight: bold;
+}
+
+.login_container input[type=submit]:hover
+{
+	background: #A7B18D;
+    color: #2A4A5F;
+}
+.form_import
+{
+    position: relative;
+	width: 29%;
+    float: left;
+    margin: 1%;
+    background: rgba(0, 0, 0, 0.26);
+    padding: 1%;
+    color: white;
+    opacity: 0.7;
+}
+.form_import.highlight
+{
+	background: rgba(123, 0, 128, 0.37);
+}
+
+.form_import .count
+{
+	position: absolute;
+    top: 10px;
+    right: 1px;
+    background: #00807D;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+}
+
+.form_import .submitted
+{
+    position: absolute;
+    right: -5px;
+    bottom: -5px;
+    margin: 1%;
+    background: rgba(0, 0, 0, 0.26);
+    padding: 1%;
+    color: white;
+    opacity: 1;
+}
+
+.form_import form input[type=file]
+{
+	
+}
+.form_import form input[type=submit]
+{
+	border: none;
+    background: #2A4A5F;
+    color: white;
+    font-weight: bold;
+}
+
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile + label {
+    max-width: 80%;
+    font-size: 1.25rem;
+    /* 20px */
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.625rem 1.25rem;
+    /* 10px 20px */
+}
+
+.no-js .inputfile + label {
+    display: none;
+}
+
+.inputfile:focus + label,
+.inputfile.has-focus + label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+.inputfile + label * {
+    /* pointer-events: none; */
+    /* in case of FastClick lib use */
+}
+
+.inputfile + label svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    margin-top: -0.25em;
+    /* 4px */
+    margin-right: 0.25em;
+    /* 4px */
+}
+
+/* style 1 */
+
+.inputfile-1 + label {
+    color: #f1e5e6;
+    background-color: #d3394c;
+}
+
+.inputfile-1:focus + label,
+.inputfile-1.has-focus + label,
+.inputfile-1 + label:hover {
+    background-color: #722040;
+}
+
